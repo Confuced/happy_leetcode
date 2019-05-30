@@ -10,7 +10,7 @@ class Solution:
                 return False
         return True
 
-    def helper(self, s, start, out, res):
+    def helper(self, s , start, out, res):
         length = len(s)
 
         if start == length:
