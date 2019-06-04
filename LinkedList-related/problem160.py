@@ -57,18 +57,18 @@ class Solution(object):
         :rtype: ListNode
         """
 
-        l1, l2 = headA, headB
-        if not (headA and headB):
-            return None
-        while l1.next: l1 = l1.next
-        while l2.next: l2 = l2.next
-        if l1 != l2:
-            return None
+        # l1, l2 = headA, headB
+        # if not (headA and headB):
+        #     return None
+        # while l1.next: l1 = l1.next
+        # while l2.next: l2 = l2.next
+        # if l1 != l2:
+        #     return None
 
         l1, l2 = headA, headB
         while l1 != l2:
-            l1 = l1.next if l1.next else headB
-            l2 = l2.next if l2.next else headA
+            l1 = l1.next if l1 else headB
+            l2 = l2.next if l2 else headA
         return l1
 
 def make_linkedlist(list1):
@@ -82,7 +82,8 @@ def make_linkedlist(list1):
 if __name__ == '__main__':
     s = Solution()
     l1 = [1, 2, 3]
-    l2 = [4, 5, 6]
+    # l2 = [4, 5, 6]
+    l2 = []
     test1 = make_linkedlist(l1)
     test2 = make_linkedlist(l2)
     res = s.getIntersectionNode(test1, test2)
