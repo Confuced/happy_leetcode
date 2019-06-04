@@ -4,3 +4,4 @@
 - leetcode 算法题源代码 & Leetcode 互动编程项目  
 https://github.com/tiankonguse/leetcode-solutions
 - [leetcode All-in-one](https://github.com/grandyang/leetcode)
+- https://github.com/strengthen/LeetCode
