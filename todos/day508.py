@@ -1,15 +1,5 @@
 class Solution:
 
-    def is_palindrome(self, s, start, end):
-        # 这个方法是检查是否是回文的
-        while start < end:
-            if s[start] == s[end]:
-                start += 1
-                end -= 1
-            else:
-                return False
-        return True
-
     def helper(self, s , start, out, res):
         length = len(s)
 
